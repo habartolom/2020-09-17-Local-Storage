@@ -12,11 +12,12 @@ if(contactsArray != null){
     
     for(let i = 0; i < contactsArray.length; i++){
         contactsList.innerHTML += `
-        <div class='contact'>
-        <h5>${contactsArray[i].name}</h5>
-        <div>${contactsArray[i].address}</div>
-        <div>${contactsArray[i].phone}</div>
-        </div>
+            <tr>
+                <th scope="row">${i+1}</th>
+                <td>${contactsArray[i].name}</td>
+                <td>${contactsArray[i].address}</td>
+                <td>${contactsArray[i].phone}</td>
+            </tr>
         `
     }
 }
